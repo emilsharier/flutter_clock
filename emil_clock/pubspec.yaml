@@ -1,0 +1,49 @@
+name: digital_clock
+description: Digital clock.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_clock_helper:
+    path: ../flutter_clock_helper
+  cupertino_icons: ^0.1.2
+  flare_flutter: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/flare/background.flr
+    - assets/flare/clouds.flr
+  fonts:
+    - family: PressStart2P
+      fonts:
+        - asset: third_party/PressStart2P-Regular.ttf
+    - family: ProductSans
+      fonts:
+        - asset: assets/fonts/ProductSansRegular.ttf
+    - family: Monoton
+      fonts:
+        - asset: assets/fonts/Monoton-Regular.ttf
+    - family: FugazOne
+      fonts:
+        - asset: assets/fonts/FugazOne-Regular.ttf    
+    - family: Archivo
+      fonts:
+        - asset: assets/fonts/ArchivoBlack-Regular.ttf
+    - family: DaysOne
+      fonts:
+        - asset: assets/fonts/DaysOne-Regular.ttf
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik-Regular.ttf
+    - family: Dosis
+      fonts:
+        - asset: assets/fonts/Dosis-VariableFont_wght.ttf
