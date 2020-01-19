@@ -93,22 +93,22 @@ class _DigitalClockState extends State<DigitalClock> {
 
     if (_background >= 18 || _background <= 5)
       _backgroundColor = "Night";
-    else if (_background >= 11 && _background < 18)
-      _backgroundColor = "Noon";
-    else if (_background > 6 && _background <= 10)
-      _backgroundColor = "Sunrise";
-    else
+    else if (_background >= 16 && _background < 18)
       _backgroundColor = "Sunset";
+    else if (_background > 11 && _background <= 15)
+      _backgroundColor = "Noon";
+    else
+      _backgroundColor = "Sunrise";
 
     final minute = DateFormat('mm').format(_dateTime);
 
-    int t = 1;
+    double t = 1;
     double t2;
     if (MediaQuery.of(context).orientation == Orientation.portrait) {
       t = 13;
       t2 = 15;
     } else {
-      t = 4;
+      t = 4.5;
       t2 = 35;
     }
 
@@ -174,18 +174,14 @@ class _DigitalClockState extends State<DigitalClock> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        widget.model.weatherString,
+                        widget.model.temperatureString,
                         style: _weatherStyle,
-                      ),
-                      Center(
-                        child: getWeatherIcon(widget.model.weatherCondition),
                       ),
                       SizedBox(
                         width: t2,
                       ),
-                      Text(
-                        widget.model.temperatureString,
-                        style: _weatherStyle,
+                      Center(
+                        child: getWeatherIcon(widget.model.weatherCondition),
                       ),
                     ],
                   ),

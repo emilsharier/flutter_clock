@@ -1,11 +1,27 @@
 # Digital Clock
 
-This app is an example of a digital clock.
-It has a light theme and a dark theme.
-See the [Analog Clock](../analog_clock) if you'd like an example that displays the weather and location.
+## Demo
 
-<img src='digital.gif' width='350'>
+![Digital clock](assets/demo/demo_gif.gif)
 
-<img src='digital_dark.png' width='350'>
+## Screenshots
 
-<img src='digital_light.png' width='350'>
+![Night](assets/demo/night.png)
+![Sunset](assets/demo/sunset.png)
+![Noon](assets/demo/noon.png)
+
+### More
+
+This clock is built as a submission to the contest 'Flutter clock' hosted by Google and Lenovo.
+The clock changes the background with a smooth animation when the time changes.
+The clock changes times when the hour hand reaches any one of the following times - 
+    1. 6 pm to 5 am (Night time)
+    2. 4 pm to 6 pm (Sunset)
+    3. 11 pm to 3 pm (Noon)
+    4. 6 am to 10 am (Sunrise)
+
+The above gif shows the animations within the app.
+
+The flutter packages used to enable animations are 
+    - flare_flutter: ^2.0.1
+
