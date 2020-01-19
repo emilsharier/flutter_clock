@@ -16,10 +16,10 @@ This clock is built as a submission to the contest 'Flutter clock' hosted by Goo
 The clock changes the background with a smooth animation when the time changes.
 The clock changes times when the hour hand reaches any one of the following times -
 
-    1. 6 pm to 5 am (Night time)
-    2. 4 pm to 6 pm (Sunset)
-    3. 11 pm to 3 pm (Noon)
-    4. 6 am to 10 am (Sunrise)
+    6 pm to 5 am (Night time)
+    4 pm to 6 pm (Sunset)
+    11 pm to 3 pm (Noon)
+    6 am to 10 am (Sunrise)
 
 The above gif shows the animations within the app.
 
