@@ -2,7 +2,7 @@
 
 ## Demo
 
-![Digital clock](assets/demo/demo_gif.gif)
+![Digital clock](emil_clock/assets/demo/demo_gif.gif)
 
 ## Screenshots
 
